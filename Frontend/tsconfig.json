@@ -1,0 +1,21 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@screens/*": ["screens/*"],
+      "@components/*": ["components/*"],
+      "@navigation/*": ["navigation/*"],
+      "@api/*": ["api/*"],
+      "@types/*": ["types/*"]
+    },
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+  },
+  "include": ["src/**/*", "App.tsx"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+}
